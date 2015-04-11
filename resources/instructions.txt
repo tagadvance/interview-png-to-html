@@ -1,0 +1,11 @@
+Ensure that it's compatible with all the mainstream browsers and media devices.
+This is an old concept that didn't consider responsive design concepts. Make sure the resulting page behaves reasonably as it relates to responsive or reactive design practices.
+No inline styles.  Place all styles in one or more linked CSS files.
+Place all javascript code in one or more linked script files.
+Add at least one jQuery, bootstrap or other javascript framework function, surprise us!
+Pictures must be cut out and placed either by an image tag or as a background.
+All text on the page should be in the HTML as text -- no text embedded in images.
+Treat each of the DOWNLOAD buttons as links.  Link these to www.sharefaith.com.
+Pay attention to details. Are there grammatical errors or inconsistencies? Fix them.
+Take some artistic liberty and make it adhere to more modern design principles.
+Place all pieces of your finished project into a file and send it back to me, zipped. Include anything you would like me to know 
