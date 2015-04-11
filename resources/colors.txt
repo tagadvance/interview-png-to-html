@@ -1,0 +1,15 @@
+header-text #2eaee9
+
+bundle-gradient-top #66aed9
+bundle-gradient-bottom #70a0cf
+
+download-gradient-top #0559ac
+download-gradient-bottom #17479e
+
+bundle-download-background-color #17479e
+bundle-download-text-color #737273 [grey]
+
+money-gradient-top #71a306
+money-gradient-bottom #92ea00
+
+regular-price #aae13c
