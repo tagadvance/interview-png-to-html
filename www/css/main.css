@@ -9,11 +9,6 @@ body {
 	border: 1px solid green;
 }
 
-h1 {
-	font-size: 48pt;
-	font-weight: bold;
-}
-
 .heavy-drop-shadow {
 	border-radius: 1em;
     box-shadow: 0 0 2em #777;
@@ -129,10 +124,26 @@ li {
 	font-size: 18pt;
 }
 
-.blue-text {
+/**
+ * Portable text classes
+ */
+
+.color-blue {
 	color: #2eaee9;
 }
 
-.white-text {
+.color-white {
 	color: #FFF;
+}
+
+.font-size-48pt {
+	font-size: 48pt;
+}
+
+.font-size-16pt {
+	font-size: 16pt;
+}
+
+.bold {
+	font-weight: bold;
 }
