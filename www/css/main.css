@@ -80,16 +80,14 @@ body {
 	display: block;
 	position: relative;
 	top: .7em;
-	left: 5.2em;
+	left: 4.8em;
 }
 
 .download {
 	display: block;
 	position: relative;
 	top: 1.2em;
-	left: 5.2em;
-	
-	font-weight: bold;
+	left: 4.8em;
 }
 
 .list-container {
@@ -124,7 +122,7 @@ li {
 }
 
 #green-giant {
-	width: 12em;
+	min-width: 12em;
 	min-height: 32em;
 	text-align: center;
 }
@@ -157,11 +155,6 @@ li {
 .black-tile {
 	background-color: #000;
 	text-align: center;
-	font-size: 10pt;
-}
-
-.black-tile p:first-child {
-	font-size: 18pt;
 }
 
 /**
@@ -176,6 +169,14 @@ li {
 	color: #2eaee9;
 }
 
+.color-green {
+	color: #e88725;
+}
+
+.color-dark-grey {
+	color: #4d4d4d;
+}
+
 .color-white {
 	color: #FFF;
 }
@@ -184,8 +185,24 @@ li {
 	font-size: 48pt;
 }
 
+.font-size-24pt {
+	font-size: 24pt;
+}
+
+.font-size-18pt {
+	font-size: 18pt;
+}
+
 .font-size-16pt {
 	font-size: 16pt;
+}
+
+.font-size-12pt {
+	font-size: 12pt;
+}
+
+.font-size-10pt {
+	font-size: 10pt;
 }
 
 .font-size-8pt {
