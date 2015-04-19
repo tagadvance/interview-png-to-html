@@ -46,15 +46,30 @@ body {
     vertical-align: middle;
 }
 
+
+
 #projector {
-	padding-top: 2.8em;
+	padding-top: 2.8em; /* shadow baseline */
+}
+
+#printer {
+	/* largest image */
+}
+
+#video {
+	
+}
+
+#illustration {
+	padding-top: 1em; /* shadow baseline */
 }
 
 .bundle-download {
 	background-image: url("../img/bundle-download.png");
+	background-repeat: no-repeat;
 	display: block;
-	width: 152px;
-	height: 53px;
+	width: 149px;
+	height: 49px;
 }
 
 .bundle-download a {
@@ -64,14 +79,14 @@ body {
 .bundle {
 	display: block;
 	position: relative;
-	top: .8em;
+	top: .7em;
 	left: 5.2em;
 }
 
 .download {
 	display: block;
 	position: relative;
-	top: 1.3em;
+	top: 1.2em;
 	left: 5.2em;
 	
 	font-weight: bold;
@@ -111,6 +126,7 @@ li {
 #green-giant {
 	width: 12em;
 	min-height: 32em;
+	text-align: center;
 }
 
 .strike {
@@ -151,6 +167,10 @@ li {
 /**
  * Portable text classes
  */
+
+.color-money {
+	color: #aae13c;
+}
 
 .color-blue {
 	color: #2eaee9;
