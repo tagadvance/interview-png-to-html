@@ -46,13 +46,15 @@ body {
     vertical-align: middle;
 }
 
+#projector {
+	padding-top: 2.8em;
+}
+
 .bundle-download {
 	background-image: url("../img/bundle-download.png");
 	display: block;
-	width: 150px;
-	height: 51px;
-	
-	font-size: 8pt;
+	width: 152px;
+	height: 53px;
 }
 
 .bundle-download a {
@@ -63,21 +65,43 @@ body {
 	display: block;
 	position: relative;
 	top: .8em;
-	left: 5.4em;
+	left: 5.2em;
 }
 
 .download {
 	display: block;
 	position: relative;
-	top: 1.2em;
-	left: 5.4em;
+	top: 1.3em;
+	left: 5.2em;
 	
 	font-weight: bold;
 }
 
+.list-container {
+	width: 10.2em;
+	background-color: #ddeffc;
+	color: #737273;
+	/*border: 1px solid red;*/
+	position: relative;
+	top: -20px;
+	padding-top: 20px;
+	z-index: -1;
+}
+
+/* This bundle includes: */
+.list-container > p:first-child {
+	/*border: 1px solid red;*/
+	color: #00449f;
+	margin: 0 1em 0 1em;
+}
+ 
 /* http://stackoverflow.com/a/16176036/625688 */
 ul {
+	/*border: 1px solid orange;*/
 	list-style: square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
+	padding: 0;
+	margin: 0 1em 1em 1em;
+	min-height: 8em;
 }
 
 li {
@@ -142,6 +166,10 @@ li {
 
 .font-size-16pt {
 	font-size: 16pt;
+}
+
+.font-size-8pt {
+	font-size: 8pt;
 }
 
 .bold {
