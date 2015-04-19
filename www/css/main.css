@@ -10,11 +10,8 @@ body {
 }
 
 h1 {
-	font-size: 24pt;
-}
-
-.headline {
-	color: #2eaee9;
+	font-size: 48pt;
+	font-weight: bold;
 }
 
 .heavy-drop-shadow {
@@ -26,6 +23,32 @@ h1 {
 	border: 1px solid #CCC;
 	border-radius: .5em;
     box-shadow: 0 0 .5em #777;
+}
+
+.product {
+	/*border: 1px dashed green;*/
+	min-height: 22em;
+}
+
+/* http://stackoverflow.com/a/7310398/625688 */
+.product > div:first-child {
+	width: 161px;
+	height: 133px; /* equals max image height */
+    
+    white-space: nowrap;
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+
+.product > div:first-child > img {
+    max-width: 161px;
+    max-height: 133px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .bundle-download {
@@ -66,16 +89,20 @@ li {
 	color: grey;
 }
 
+#green-giant {
+	width: 12em;
+	min-height: 32em;
+}
+
 .strike {
 	text-decoration: line-through;
 }
 
 .tile {
-	margin-top: 1em;
-	margin-left: 1em;
+	margin: 1em;
 	padding: 1em;
-	
-	color: #FFF;
+	min-width: 15em;
+	min-height: 15em;
 }
 
 .green-tile {
@@ -102,7 +129,10 @@ li {
 	font-size: 18pt;
 }
 
-.bottom-tile {
-	min-height: 18em;
-	max-height: 18em;
+.blue-text {
+	color: #2eaee9;
+}
+
+.white-text {
+	color: #FFF;
 }
