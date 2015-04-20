@@ -8,8 +8,12 @@ body {
 	padding: 1em 2em 1em 2em; /* use consistent padding */
 }
 
-.add-margin {
+.margin-1em {
 	margin: 1em;
+}
+
+.margin-0 {
+	margin: 0;
 }
 
 .heavy-drop-shadow {
@@ -166,6 +170,10 @@ li {
 
 .black-tile a {
 	color: #FFF;
+}
+
+.black-tile > a > img {
+	margin-top:  1em;
 }
 
 /**
