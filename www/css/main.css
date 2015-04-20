@@ -6,7 +6,10 @@ body {
 
 .container {
 	padding: 1em 2em 1em 2em; /* use consistent padding */
-	border: 1px solid green;
+}
+
+.add-margin {
+	margin: 1em;
 }
 
 .heavy-drop-shadow {
@@ -152,9 +155,17 @@ li {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a306', endColorstr='#92ea00',GradientType=0 ); /* IE6-8 */
 }
 
+.green-tile a {
+	color: #FFF;
+}
+
 .black-tile {
 	background-color: #000;
 	text-align: center;
+}
+
+.black-tile a {
+	color: #FFF;
 }
 
 /**
@@ -185,6 +196,10 @@ li {
 	font-size: 48pt;
 }
 
+.font-size-32pt {
+	font-size: 32pt;
+}
+
 .font-size-24pt {
 	font-size: 24pt;
 }
@@ -195,6 +210,10 @@ li {
 
 .font-size-16pt {
 	font-size: 16pt;
+}
+
+.font-size-14pt {
+	font-size: 14pt;
 }
 
 .font-size-12pt {
