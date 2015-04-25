@@ -1,0 +1,9 @@
+.heavy-drop-shadow {
+	background-color: #FFF;
+	behavior: url(./js/PIE.htc);
+}
+
+.light-drop-shadow {
+	background-color: #FFF;
+	behavior: url(./js/PIE.htc);
+}

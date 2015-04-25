@@ -21,10 +21,6 @@ body {
     -moz-box-shadow: 0 0 2em #777;
 	-webkit-box-shadow: 0 0 2em #777;
 	box-shadow: 0 0 2em #777;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#777')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#777');
 }
 
 .light-drop-shadow {
@@ -33,10 +29,6 @@ body {
 	-moz-box-shadow: 0 0 .5em #777;
 	-webkit-box-shadow: 0 0 .5em #777;
 	box-shadow: 0 0 .5em #777;
-	/* For IE 8 */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#777777')";
-	/* For IE 5.5 - 7 */
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#777777');
 }
 
 .product {
