@@ -15,7 +15,7 @@ $(function() {
 	$overlay.stop(clearQueue, jumpToEnd);
 
 	update_position($image, $overlay);
-	$overlay.fadeIn("slow");
+	$overlay.fadeIn("fast");
 
 	// reset click-through
 	$overlay.off('click');
@@ -25,6 +25,6 @@ $(function() {
 	});
     });
     $overlay.mouseout(function(e) {
-	$overlay.fadeOut("slow");
+	$overlay.fadeOut("fast");
     });
 });
