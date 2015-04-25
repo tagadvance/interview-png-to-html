@@ -189,6 +189,18 @@ li {
 }
 
 /**
+ * supernova
+ */
+ 
+#supernova {
+ 	display: none;
+ 	position: absolute;
+ 	z-index: 999;
+ 	/*pointer-events: none;*/
+}
+
+
+/**
  * Portable text classes
  */
 
