@@ -1,9 +1,11 @@
 .heavy-drop-shadow {
 	background-color: #FFF;
+	/* Note: this path is relative to the HTML file being viewed, not the CSS file it is called from. */
 	behavior: url(./js/PIE.htc);
 }
 
 .light-drop-shadow {
 	background-color: #FFF;
+	/* Note: this path is relative to the HTML file being viewed, not the CSS file it is called from. */
 	behavior: url(./js/PIE.htc);
 }
