@@ -12,8 +12,8 @@ $(function() {
 	
 	var clearQueue = true;
 	var jumpToEnd = true;
-	$overlay.stop( clearQueue, jumpToEnd );
-	
+	$overlay.stop(clearQueue, jumpToEnd);
+
 	update_position($image, $overlay);
 	$overlay.fadeIn("slow");
 
