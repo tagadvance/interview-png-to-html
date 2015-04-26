@@ -170,6 +170,7 @@ li {
 }
 
 #green-giant {
+	margin-top: 1.4em; /* align with bottom of bundle */
 	min-width: 12em;
 	min-height: 30em;
 	text-align: center;
