@@ -108,7 +108,7 @@ a:active {
 
 /* http://stackoverflow.com/a/7310398/625688 */
 .product > div:first-child {
-	width: 161px;
+	width: 161px; /* equals max image width */
 	height: 133px; /* equals max image height */
     
     white-space: nowrap;
@@ -116,18 +116,11 @@ a:active {
     text-align: center;
 }
 
-.product > div:first-child > img {
-    max-width: 161px;
-    max-height: 133px;
-}
-
 .helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-
-
 
 #projector {
 	padding-top: 2.8em; /* shadow baseline */
@@ -237,7 +230,7 @@ li {
 }
 
 #island {
-	margin: 0 4em 0 4em;
+	max-width: 25em;
 }
 
 /* 18,500 churches already use Sharefaith! */
@@ -350,6 +343,30 @@ li {
 
 .font-size-8pt {
 	font-size: 8pt;
+}
+
+@media ( max-width : 480px) {
+	.font-size-48pt {
+		font-size: 36pt;
+	}
+	.font-size-36pt {
+		font-size: 27pt;
+	}
+	.font-size-32pt {
+		font-size: 24pt;
+	}
+}
+
+@media ( max-width : 360px) {
+	.font-size-48pt {
+		font-size: 24pt;
+	}
+	.font-size-36pt {
+		font-size: 18pt;
+	}
+	.font-size-32pt {
+		font-size: 16pt;
+	}
 }
 
 .bold {
