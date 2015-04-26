@@ -204,14 +204,23 @@ li {
 }
 
 .lt-ie9 #green-giant {
-	min-height: 28em; /* align with bottom of bundle */
+	min-height: 28.2em; /* align with bottom of bundle */
 }
 
-#green-giant > div:nth-child(1) {
+#green-giant > div:first-child(1) {
 	margin-top: 1em;
 }
 
+.lt-ie8 #green-giant > div.first-child {
+	margin-top: 2em;
+}
+
 #green-giant > div:nth-child(2) {
+	margin-top: 2em;
+}
+
+/* :nth-child doesn't work in ie7/8 */
+.lt-ie9 #green-giant > div.second-child {
 	margin-top: 2em;
 }
 
@@ -219,26 +228,27 @@ li {
 	margin-top: 4em;
 }
 
-.lt-ie8 #green-giant div {
+/* :last-child doesn't work in ie7/8 */
+.lt-ie9 #green-giant > div.last-child {
 	margin-top: 2em;
-	/*background: #F00;*/
 }
 
-.lt-ie8 #green-giant img {
-	margin-top: 1em;
-	/*background: #00F;*/
-}
-
-#sleeping-giant>p:first-child {
+#green-lake>p:first-child {
 	text-align: center;
 }
 
-#island {
+#green-lake>.island {
 	max-width: 25em;
 }
 
-/* 18,500 churches already use Sharefaith! */
-#island>p:last-child {
+/*
+ * 18,500 churches already use Sharefaith.
+ */
+.island>p:last-child {
+	margin-top: .5em;
+}
+
+.lt-ie8 .island>p.last-child {
 	margin-top: .5em;
 }
 
@@ -310,7 +320,7 @@ li {
 }
 
 /**
- * Portable text classes
+ * color palette
  */
 
 .color-money {
@@ -328,6 +338,10 @@ li {
 .color-dark-grey {
 	color: #4d4d4d;
 }
+
+/*
+ * portable text classes
+ */
 
 .font-size-48pt {
 	font-size: 48pt;
@@ -369,7 +383,7 @@ li {
 	font-size: 8pt;
 }
 
-/* scale down text to 75% at low resolution */
+/* scale down large text to 75% at low resolution */
 @media ( max-width : 480px) {
 	.font-size-48pt {
 		font-size: 36pt;
@@ -383,7 +397,7 @@ li {
 }
 
 
-/* scale down text to 50% at low resolution */
+/* scale down large text to 50% at low resolution */
 @media ( max-width : 360px) {
 	.font-size-48pt {
 		font-size: 24pt;
