@@ -8,9 +8,18 @@ a {
 	color: inherit;
 }
 
+.lt-ie8 .container a {
+	color: #fff;
+}
+
 /* unvisited link */
 a:link {
     color: inherit;
+}
+
+/* unvisited link */
+.lt-ie8 .container a:link {
+    color: #fff;
 }
 
 /* visited link */
@@ -18,14 +27,29 @@ a:visited {
     color: inherit;
 }
 
+/* visited link */
+.lt-ie8 .container a:visited {
+    color: #fff;
+}
+
 /* mouse over link */
 a:hover {
     color: inherit;
 }
 
+/* mouse over link */
+.lt-ie8 .container a:hover {
+    color: #fff;
+}
+
 /* selected link */
 a:active {
     color: inherit;
+}
+
+/* selected link */
+.lt-ie8 .container a:active {
+    color: #fff;
 }
 
 .container {
@@ -52,6 +76,12 @@ a:active {
 	box-shadow: 0 0 2em #777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
 
+.lt-ie9 .heavy-drop-shadow {
+	background-color: #FFF;
+	/* Note: this path is relative to the HTML file being viewed, not the CSS file it is called from. */
+	behavior: url(./js/PIE.htc);
+}
+
 .light-drop-shadow {
 	border: 1px solid #CCC;
 	
@@ -63,6 +93,12 @@ a:active {
 	-moz-box-shadow: 0 0 .5em #777;
 	-webkit-box-shadow: 0 0 .5em #777; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	box-shadow: 0 0 .5em #777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+
+.lt-ie9 .light-drop-shadow {
+	background-color: #FFF;
+	/* Note: this path is relative to the HTML file being viewed, not the CSS file it is called from. */
+	behavior: url(./js/PIE.htc);
 }
 
 .product {
@@ -176,6 +212,14 @@ li {
 	text-align: center;
 }
 
+/*
+ * fix hover bug
+ * http://stackoverflow.com/a/12665222/625688
+ */
+.ie9 #green-giant {
+	min-height: 0px;
+}
+
 #green-giant > div:nth-child(1) {
 	margin-top: 1em;
 }
@@ -247,19 +291,6 @@ li {
 .black-tile > a > img {
 	margin: 1em;
 }
-
-/**
- * supernova
- */
- 
-#supernova {
- 	display: none;
- 	position: absolute;
- 	z-index: 999;
- 	cursor: pointer;
- 	/*pointer-events: none;*/
-}
-
 
 /**
  * Portable text classes

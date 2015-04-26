@@ -8,3 +8,11 @@
 	-ms-transform: scale(1.1); /* IE 9 */
 	transform: scale(1.1); /* Firefox 16+, IE 10+, Opera */
 }
+ 
+#supernova {
+ 	display: none;
+ 	position: absolute;
+ 	z-index: 999;
+ 	cursor: pointer;
+ 	/*pointer-events: none;*/
+}
