@@ -171,8 +171,46 @@ li {
 
 #green-giant {
 	min-width: 12em;
-	min-height: 32em;
+	min-height: 30em;
 	text-align: center;
+}
+
+#green-giant > div:nth-child(1) {
+	margin-top: 1em;
+}
+
+#green-giant > div:nth-child(2) {
+	margin-top: 2em;
+}
+
+#green-giant > div:nth-child(3) {
+	margin-top: 4em;
+}
+
+#sleeping-giant>p:first-child {
+	text-align: center;
+}
+
+#island {
+	margin: 0 4em 0 4em;
+}
+
+/* 18,500 churches already use Sharefaith! */
+#island>p:last-child {
+	margin-top: .5em;
+}
+
+/* http://stackoverflow.com/a/9181207/625688 */
+.justify {
+	text-align: justify;
+	width: 100%;
+	height: 1em;
+}
+
+.justify:after {
+	content: "";
+	display: inline-block;
+	width: 100%;
 }
 
 .strike {
@@ -284,4 +322,8 @@ li {
 
 .bold {
 	font-weight: bold;
+}
+
+.line-height-1 {
+	line-height: 1;
 }
