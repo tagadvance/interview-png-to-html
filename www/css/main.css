@@ -29,8 +29,8 @@ a:active {
 }
 
 .container {
-	padding: 1em 2em 1em 2em; /* use consistent padding */
 	color: #fff;
+	padding: 1em 2em 1em 2em; /* use consistent padding */
 }
 
 .margin-1em {
@@ -241,6 +241,39 @@ li {
 	max-width: 25em;
 }
 
+/*  justify words so that the ends line up */
+@media ( min-width : 480px) {
+	/* SAVE 15% */
+	#green-lake>.island>p:nth-child(2) {
+		word-spacing: .4em;
+	}
+	
+	/* ie8 */
+	.lt-ie9 #green-lake>.island>p.second-child {
+		word-spacing: .4em;
+	}
+	
+	/* ie7 */
+	.lt-ie8 #green-lake>.island>p.second-child {
+		word-spacing: 1.8em;
+	}
+	
+	/* Pay Only $127 /year */
+	#green-lake>.island>p:nth-child(3) {
+		word-spacing: .46em;
+	}
+	
+	/* ie8 */
+	.lt-ie9 #green-lake>.island>p.third-child {
+		word-spacing: .46em;
+	}
+	
+	/* ie7 */
+	.lt-ie8 #green-lake>.island>p.third-child {
+		word-spacing: 1.1em;
+	}
+}
+
 /*
  * 18,500 churches already use Sharefaith.
  */
@@ -276,8 +309,8 @@ li {
 	min-height: 15em; /* ensure bottom times have the same height */
 }
 
-.lt-ie8 .tile {
-	min-height: 12em; /* ensure bottom times have the same height */
+.lt-ie9 .tile {
+	min-height: 13em; /* ensure bottom times have the same height */
 }
 
 .green-tile {
@@ -395,7 +428,6 @@ li {
 		font-size: 24pt;
 	}
 }
-
 
 /* scale down large text to 50% at low resolution */
 @media ( max-width : 360px) {
