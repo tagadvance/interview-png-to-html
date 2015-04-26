@@ -43,11 +43,9 @@ a:active {
 
 .heavy-box-shadow {
 	border-radius: 1em; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-	
 	/* useful if you don't want a bg color from leaking outside the border: */
-  	background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
-	
-    -moz-box-shadow: 0 0 2em #777;
+	background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
+	-moz-box-shadow: 0 0 2em #777;
 	-webkit-box-shadow: 0 0 2em #777; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	box-shadow: 0 0 2em #777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
@@ -65,12 +63,9 @@ a:active {
 
 .light-box-shadow {
 	border: 1px solid #CCC;
-	
 	border-radius: .5em; /* Android 2.1+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 5+ */
-	
 	/* useful if you don't want a bg color from leaking outside the border: */
-  	background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
-  
+	background-clip: padding-box; /* Android 2.2+, Chrome, Firefox 4+, IE 9+, iOS 4+, Opera 10.50+, Safari 4+ */
 	-moz-box-shadow: 0 0 .5em #777;
 	-webkit-box-shadow: 0 0 .5em #777; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
 	box-shadow: 0 0 .5em #777; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
@@ -93,13 +88,12 @@ a:active {
 }
 
 /* http://stackoverflow.com/a/7310398/625688 */
-.product > div:first-child {
+.product>div:first-child {
 	width: 161px; /* equals max image width */
 	height: 133px; /* equals max image height */
-    
-    white-space: nowrap;
-    /*border: 1px solid red;*/
-    text-align: center;
+	white-space: nowrap;
+	/*border: 1px solid red;*/
+	text-align: center;
 }
 
 .lt-ie8 .row {
@@ -107,9 +101,9 @@ a:active {
 }
 
 .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 #projector {
@@ -118,6 +112,7 @@ a:active {
 
 #printer {
 	/* largest image */
+	
 }
 
 #video {
@@ -134,7 +129,7 @@ a:active {
 	position: relative;
 }
 
-.bundle-download > a:first-child {
+.bundle-download>a:first-child {
 	display: block;
 	position: absolute;
 	background-image: url("../img/bundle-download.png");
@@ -169,12 +164,12 @@ a:active {
 }
 
 /* This bundle includes: */
-.list-container > p:first-child {
+.list-container>p:first-child {
 	/*border: 1px solid red;*/
 	color: #00449f;
 	margin: 0 1em 0 1em;
 }
- 
+
 /* http://stackoverflow.com/a/16176036/625688 */
 ul {
 	/*border: 1px solid orange;*/
@@ -207,29 +202,29 @@ li {
 	min-height: 28.2em; /* align with bottom of bundle */
 }
 
-#green-giant > div:first-child(1) {
+#green-giant>div:first-child(1) {
 	margin-top: 1em;
 }
 
-.lt-ie8 #green-giant > div.first-child {
+.lt-ie8 #green-giant>div.first-child {
 	margin-top: 2em;
 }
 
-#green-giant > div:nth-child(2) {
+#green-giant>div:nth-child(2) {
 	margin-top: 2em;
 }
 
 /* :nth-child doesn't work in ie7/8 */
-.lt-ie9 #green-giant > div.second-child {
+.lt-ie9 #green-giant>div.second-child {
 	margin-top: 2em;
 }
 
-#green-giant > div:nth-child(3) {
+#green-giant>div:nth-child(3) {
 	margin-top: 4em;
 }
 
 /* :last-child doesn't work in ie7/8 */
-.lt-ie9 #green-giant > div.last-child {
+.lt-ie9 #green-giant>div.last-child {
 	margin-top: 2em;
 }
 
@@ -247,27 +242,27 @@ li {
 	#green-lake>.island>p:nth-child(2) {
 		word-spacing: .4em;
 	}
-	
+
 	/* ie8 */
 	.lt-ie9 #green-lake>.island>p.second-child {
 		word-spacing: .4em;
 	}
-	
+
 	/* ie7 */
 	.lt-ie8 #green-lake>.island>p.second-child {
 		word-spacing: 1.8em;
 	}
-	
+
 	/* Pay Only $127 /year */
 	#green-lake>.island>p:nth-child(3) {
 		word-spacing: .46em;
 	}
-	
+
 	/* ie8 */
 	.lt-ie9 #green-lake>.island>p.third-child {
 		word-spacing: .46em;
 	}
-	
+
 	/* ie7 */
 	.lt-ie8 #green-lake>.island>p.third-child {
 		word-spacing: 1.1em;
@@ -316,13 +311,14 @@ li {
 .green-tile {
 	/* http://www.colorzilla.com/gradient-editor/ */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcxYTMwNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5MmVhMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-	background: -moz-linear-gradient(top,  #71a306 0%, #92ea00 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#71a306), color-stop(100%,#92ea00)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #71a306 0%,#92ea00 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #71a306 0%,#92ea00 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #71a306 0%,#92ea00 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #71a306 0%,#92ea00 100%); /* W3C */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzcxYTMwNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM5MmVhMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #71a306 0%, #92ea00 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #71a306), color-stop(100%, #92ea00)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #71a306 0%, #92ea00 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #71a306 0%, #92ea00 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #71a306 0%, #92ea00 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #71a306 0%, #92ea00 100%); /* W3C */
 }
 
 .lt-ie9 .green-tile {
@@ -331,7 +327,7 @@ li {
 
 .lt-ie8 .green-tile {
 	/* gradient breaks rounded corners */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a306', endColorstr='#92ea00',GradientType=0 ); /* IE6-8 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a306', endColorstr='#92ea00', GradientType=0); /* IE6-8 */
 }
 
 .black-tile {
@@ -343,7 +339,7 @@ li {
 	background: #000;
 }
 
-.black-tile > a > img {
+.black-tile>a>img {
 	margin: 1em;
 }
 
@@ -355,7 +351,7 @@ li {
 /**
  * color palette
  */
-
+ 
 .color-money {
 	color: #aae13c;
 }
@@ -375,7 +371,7 @@ li {
 /*
  * portable text classes
  */
-
+ 
 .font-size-48pt {
 	font-size: 48pt;
 }
