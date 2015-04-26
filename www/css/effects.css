@@ -1,0 +1,10 @@
+.grow {
+	-webkit-transition: all .2s linear; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+	transition: all .2s linear; /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
+}
+
+.grow:hover {
+	-webkit-transform: scale(1.1); /* Chrome, Opera 15+, Safari 3.1+ */
+	-ms-transform: scale(1.1); /* IE 9 */
+	transform: scale(1.1); /* Firefox 16+, IE 10+, Opera */
+}
