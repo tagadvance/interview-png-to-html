@@ -1,7 +1,32 @@
 body {
+	color: #fff;
 	font-family: Arial, sans-serif;
 	padding-top: 2em;
 	padding-bottom: 2em;
+}
+
+a {
+	color: inherit;
+}
+
+/* unvisited link */
+a:link {
+    color: inherit;
+}
+
+/* visited link */
+a:visited {
+    color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+    color: inherit;
+}
+
+/* selected link */
+a:active {
+    color: inherit;
 }
 
 .container {
@@ -88,7 +113,6 @@ body {
 	background-repeat: no-repeat;
 	width: 149px; /* must match background-image */
 	height: 49px; /* must match background-image */
-	color: #FFF;
 }
 
 .bundle {
@@ -167,17 +191,9 @@ li {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71a306', endColorstr='#92ea00',GradientType=0 ); /* IE6-8 */
 }
 
-.green-tile a {
-	color: #FFF;
-}
-
 .black-tile {
 	background-color: #000;
 	text-align: center;
-}
-
-.black-tile a {
-	color: #FFF;
 }
 
 .black-tile > a > img {
@@ -214,10 +230,6 @@ li {
 
 .color-dark-grey {
 	color: #4d4d4d;
-}
-
-.color-white {
-	color: #FFF;
 }
 
 .font-size-48pt {
