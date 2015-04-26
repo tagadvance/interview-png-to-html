@@ -1,5 +1,4 @@
 body {
-	color: #fff;
 	font-family: Arial, sans-serif;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -31,6 +30,7 @@ a:active {
 
 .container {
 	padding: 1em 2em 1em 2em; /* use consistent padding */
+	color: #fff;
 }
 
 .margin-1em {

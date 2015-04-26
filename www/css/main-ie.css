@@ -1,3 +1,27 @@
+.container a {
+	color: #fff;
+}
+
+/* unvisited link */
+.container a:link {
+    color: #fff;
+}
+
+/* visited link */
+.container a:visited {
+    color: #fff;
+}
+
+/* mouse over link */
+.container a:hover {
+    color: #fff;
+}
+
+/* selected link */
+.container a:active {
+    color: #fff;
+}
+
 .heavy-drop-shadow {
 	background-color: #FFF;
 	/* Note: this path is relative to the HTML file being viewed, not the CSS file it is called from. */
