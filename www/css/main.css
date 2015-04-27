@@ -83,7 +83,6 @@ a:active {
 }
 
 .product {
-	/*border: 1px dashed green;*/
 	min-height: 22em;
 }
 
@@ -92,7 +91,6 @@ a:active {
 	width: 161px; /* equals max image width */
 	height: 133px; /* equals max image height */
 	white-space: nowrap;
-	/*border: 1px solid red;*/
 	text-align: center;
 }
 
@@ -156,7 +154,6 @@ a:active {
 	width: 10.2em;
 	background-color: #ddeffc;
 	color: #737273;
-	/*border: 1px solid red;*/
 	position: relative;
 	top: -20px;
 	padding-top: 20px;
@@ -165,14 +162,12 @@ a:active {
 
 /* This bundle includes: */
 .list-container>p:first-child {
-	/*border: 1px solid red;*/
 	color: #00449f;
 	margin: 0 1em 0 1em;
 }
 
 /* http://stackoverflow.com/a/16176036/625688 */
 ul {
-	/*border: 1px solid orange;*/
 	list-style: square inside url('data:image/gif;base64,R0lGODlhBQAKAIABAAAAAP///yH5BAEAAAEALAAAAAAFAAoAAAIIjI+ZwKwPUQEAOw==');
 	padding: 0;
 	margin: 0 1em 1em 1em;
