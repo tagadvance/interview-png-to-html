@@ -1,3 +1,30 @@
+// http://stackoverflow.com/a/21712356/625688
+function detectIE() {
+    var ua = window.navigator.userAgent;
+
+    var msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+	// IE 10 or older => return version number
+	return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+
+    var trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+	// IE 11 => return version number
+	var rv = ua.indexOf('rv:');
+	return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+
+    var edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+	// IE 12 => return version number
+	return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+
+    // other browser
+    return false;
+}
+
 function update_position($image, $overlay) {
     var offset = $image.offset();
     var x = offset.left + ($image.width() - $overlay.width()) / 2;
@@ -5,55 +32,26 @@ function update_position($image, $overlay) {
     $overlay.css("left", x).css("top", y);
 };
 
-function copy_attributes($image, $overlay) {
-    var attributes = [ "alt", "title" ];
-    $.each(attributes, function(index, attribute) {
-	var value = $image.attr(attribute);
-	$overlay.attr(attribute, value);
-    });
-}
-
-function is_left_click(event) {
-    return (event.which == 1);
-}
-
 $(function() {
-    var time = $.now();
-    var minimumElapsedTime = 100;
-    
-    var href = null;
-    var $overlay = $("#supernova");
-    var mouseup = function(e) {
-	if (is_left_click(e)) {
-	    $overlay.show();
-	    window.location.href = href;
-	}
-    };
-    $("a > img").mouseenter(function(e) {
-	var now = $.now();
-	if ((now - time) < minimumElapsedTime) {
-	    // fix firefox bug where hiding the overlay triggers this event
-	    return;
-	}
-	
-	var $image = $(this);
-	$a = $image.parent();
-	href = $a.attr('href');
+    var ie = detectIE();
+    if (ie != false && ie < 11) {
+	return;
+    }
 
+    var $overlay = $("#supernova");
+    $("a > img").mouseenter(function(e) {
 	var clearQueue = true;
 	var jumpToEnd = true;
 	$overlay.stop(clearQueue, jumpToEnd);
 
-	copy_attributes($image, $overlay);
+	var $image = $(this);
 	update_position($image, $overlay);
 	$overlay.fadeIn("fast");
-    }).mouseup(mouseup);
-    $overlay.mousedown(function(e) {
-	if (is_left_click(e)) {
-	    time = $.now();
-	    $overlay.hide();
-	}
-    }).mouseup(/* fix ie bug */mouseup).mouseout(function(e) {
+    }).mousedown(function(e) {
+	$overlay.hide();
+    }).mouseup(function(e) {
+	$overlay.show();
+    }).mouseout(function(e) {
 	$overlay.fadeOut("fast");
     });
 });
