@@ -18,9 +18,27 @@ function is_left_click(event) {
 }
 
 $(function() {
+    var time = $.now();
+    var minimumElapsedTime = 100;
+    
+    var href = null;
     var $overlay = $("#supernova");
+    var mouseup = function(e) {
+	if (is_left_click(e)) {
+	    $overlay.show();
+	    window.location.href = href;
+	}
+    };
     $("a > img").mouseenter(function(e) {
+	var now = $.now();
+	if ((now - time) < minimumElapsedTime) {
+	    // fix firefox bug where hiding the overlay triggers this event
+	    return;
+	}
+	
 	var $image = $(this);
+	$a = $image.parent();
+	href = $a.attr('href');
 
 	var clearQueue = true;
 	var jumpToEnd = true;
@@ -29,20 +47,13 @@ $(function() {
 	copy_attributes($image, $overlay);
 	update_position($image, $overlay);
 	$overlay.fadeIn("fast");
-    }).mouseup(function(e) {
-	if (is_left_click(e)) {
-	    $overlay.show();
-
-	    var $image = $(this);
-	    $a = $image.parent();
-	    window.location.href = $a.attr('href');
-	}
-    });
+    }).mouseup(mouseup);
     $overlay.mousedown(function(e) {
 	if (is_left_click(e)) {
+	    time = $.now();
 	    $overlay.hide();
 	}
-    }).mouseout(function(e) {
+    }).mouseup(/* fix ie bug */mouseup).mouseout(function(e) {
 	$overlay.fadeOut("fast");
     });
 });
