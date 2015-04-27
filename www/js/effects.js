@@ -5,6 +5,18 @@ function update_position($image, $overlay) {
     $overlay.css("left", x).css("top", y);
 };
 
+function copy_attributes($image, $overlay) {
+    var attributes = [ "alt", "title" ];
+    $.each(attributes, function(index, attribute) {
+	var value = $img.attr(attribute);
+	$overlay.attr(attribute, value);
+    });
+}
+
+function is_left_click(event) {
+    return (event.which == 1);
+}
+
 $(function() {
     var $overlay = $("#supernova");
     $("a > img").mouseenter(function(e) {
@@ -15,16 +27,21 @@ $(function() {
 	$overlay.stop(clearQueue, jumpToEnd);
 
 	update_position($image, $overlay);
+	copy_attributes($image, $overlay);
 	$overlay.fadeIn("fast");
     }).mouseup(function(e) {
-	$overlay.show();
+	if (is_left_click(e)) {
+	    $overlay.show();
 
-	var $image = $(this);
-	$a = $image.parent();
-	window.location.href = $a.attr('href');
+	    var $image = $(this);
+	    $a = $image.parent();
+	    window.location.href = $a.attr('href');
+	}
     });
     $overlay.mousedown(function(e) {
-	$overlay.hide();
+	if (is_left_click(e)) {
+	    $overlay.hide();
+	}
     }).mouseout(function(e) {
 	$overlay.fadeOut("fast");
     });
