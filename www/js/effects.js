@@ -8,7 +8,7 @@ function update_position($image, $overlay) {
 function copy_attributes($image, $overlay) {
     var attributes = [ "alt", "title" ];
     $.each(attributes, function(index, attribute) {
-	var value = $img.attr(attribute);
+	var value = $image.attr(attribute);
 	$overlay.attr(attribute, value);
     });
 }
@@ -26,8 +26,8 @@ $(function() {
 	var jumpToEnd = true;
 	$overlay.stop(clearQueue, jumpToEnd);
 
-	update_position($image, $overlay);
 	copy_attributes($image, $overlay);
+	update_position($image, $overlay);
 	$overlay.fadeIn("fast");
     }).mouseup(function(e) {
 	if (is_left_click(e)) {
