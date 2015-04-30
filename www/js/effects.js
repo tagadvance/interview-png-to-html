@@ -38,6 +38,9 @@ $(function() {
 	return;
     }
 
+    $overlay = $("<img/>").attr("src", "img/supernova.png").attr("id", "supernova").attr("alt", "button hover effect");
+    $("body").append($overlay);
+
     var $overlay = $("#supernova");
     $("a > img").mouseenter(function(e) {
 	var clearQueue = true;
